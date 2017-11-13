@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F20979761FB9D70600CCC6D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20979751FB9D70600CCC6D2 /* AppDelegate.swift */; };
-		F20979781FB9D70600CCC6D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20979771FB9D70600CCC6D2 /* ViewController.swift */; };
 		F209797B1FB9D70600CCC6D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20979791FB9D70600CCC6D2 /* Main.storyboard */; };
 		F209797D1FB9D70600CCC6D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F209797C1FB9D70600CCC6D2 /* Assets.xcassets */; };
 		F20979801FB9D70600CCC6D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F209797E1FB9D70600CCC6D2 /* LaunchScreen.storyboard */; };
@@ -35,8 +33,6 @@
 
 /* Begin PBXFileReference section */
 		F20979721FB9D70600CCC6D2 /* Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F20979751FB9D70600CCC6D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F20979771FB9D70600CCC6D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F209797A1FB9D70600CCC6D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F209797C1FB9D70600CCC6D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F209797F1FB9D70600CCC6D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +93,6 @@
 		F20979741FB9D70600CCC6D2 /* Reversi */ = {
 			isa = PBXGroup;
 			children = (
-				F20979751FB9D70600CCC6D2 /* AppDelegate.swift */,
-				F20979771FB9D70600CCC6D2 /* ViewController.swift */,
 				F20979791FB9D70600CCC6D2 /* Main.storyboard */,
 				F209797C1FB9D70600CCC6D2 /* Assets.xcassets */,
 				F209797E1FB9D70600CCC6D2 /* LaunchScreen.storyboard */,
@@ -189,7 +183,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "神田世奈";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					F20979711FB9D70600CCC6D2 = {
 						CreatedOnToolsVersion = 9.1;
@@ -259,8 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20979781FB9D70600CCC6D2 /* ViewController.swift in Sources */,
-				F20979761FB9D70600CCC6D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				INFOPLIST_FILE = Reversi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.senakanda.Reversi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				INFOPLIST_FILE = Reversi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.senakanda.Reversi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,7 +449,6 @@
 		F209799E1FB9D70700CCC6D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
@@ -472,7 +465,6 @@
 		F209799F1FB9D70700CCC6D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
@@ -489,7 +481,6 @@
 		F20979A11FB9D70700CCC6D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				INFOPLIST_FILE = ReversiUITests/Info.plist;
@@ -505,7 +496,6 @@
 		F20979A21FB9D70700CCC6D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				INFOPLIST_FILE = ReversiUITests/Info.plist;
