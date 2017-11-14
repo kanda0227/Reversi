@@ -12,6 +12,9 @@
 		F20979801FB9D70600CCC6D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F209797E1FB9D70600CCC6D2 /* LaunchScreen.storyboard */; };
 		F209798B1FB9D70700CCC6D2 /* ReversiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F209798A1FB9D70700CCC6D2 /* ReversiTests.swift */; };
 		F20979961FB9D70700CCC6D2 /* ReversiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20979951FB9D70700CCC6D2 /* ReversiUITests.swift */; };
+		F2803DC01FBB369800A09182 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2803DBF1FBB369800A09182 /* Square.swift */; };
+		F2803DC21FBB393C00A09182 /* GameKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2803DC11FBB393C00A09182 /* GameKeeper.swift */; };
+		F2CB2FCE1FBB327800573886 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB2FCD1FBB327800573886 /* BoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		F20979911FB9D70700CCC6D2 /* ReversiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReversiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20979951FB9D70700CCC6D2 /* ReversiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversiUITests.swift; sourceTree = "<group>"; };
 		F20979971FB9D70700CCC6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2803DBF1FBB369800A09182 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		F2803DC11FBB393C00A09182 /* GameKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameKeeper.swift; sourceTree = "<group>"; };
+		F2CB2FCD1FBB327800573886 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				F20979791FB9D70600CCC6D2 /* Main.storyboard */,
+				F2803DC11FBB393C00A09182 /* GameKeeper.swift */,
 				F209797C1FB9D70600CCC6D2 /* Assets.xcassets */,
 				F209797E1FB9D70600CCC6D2 /* LaunchScreen.storyboard */,
 				F20979811FB9D70600CCC6D2 /* Info.plist */,
+				F2CB2FCD1FBB327800573886 /* BoardViewController.swift */,
+				F2803DBF1FBB369800A09182 /* Square.swift */,
 			);
 			path = Reversi;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 				TargetAttributes = {
 					F20979711FB9D70600CCC6D2 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					F20979851FB9D70700CCC6D2 = {
@@ -253,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2803DC01FBB369800A09182 /* Square.swift in Sources */,
+				F2CB2FCE1FBB327800573886 /* BoardViewController.swift in Sources */,
+				F2803DC21FBB393C00A09182 /* GameKeeper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				INFOPLIST_FILE = Reversi/Info.plist;
@@ -425,6 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.senakanda.Reversi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -434,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				INFOPLIST_FILE = Reversi/Info.plist;
@@ -449,6 +465,7 @@
 		F209799E1FB9D70700CCC6D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
@@ -465,6 +482,7 @@
 		F209799F1FB9D70700CCC6D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
@@ -481,6 +499,7 @@
 		F20979A11FB9D70700CCC6D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				INFOPLIST_FILE = ReversiUITests/Info.plist;
@@ -496,6 +515,7 @@
 		F20979A21FB9D70700CCC6D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GN4JB29B;
 				INFOPLIST_FILE = ReversiUITests/Info.plist;
