@@ -79,10 +79,10 @@
 		F20979691FB9D70600CCC6D2 = {
 			isa = PBXGroup;
 			children = (
+				F20979731FB9D70600CCC6D2 /* Products */,
 				F20979741FB9D70600CCC6D2 /* Reversi */,
 				F20979891FB9D70700CCC6D2 /* ReversiTests */,
 				F20979941FB9D70700CCC6D2 /* ReversiUITests */,
-				F20979731FB9D70600CCC6D2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +99,12 @@
 		F20979741FB9D70600CCC6D2 /* Reversi */ = {
 			isa = PBXGroup;
 			children = (
-				F20979791FB9D70600CCC6D2 /* Main.storyboard */,
-				F2803DC11FBB393C00A09182 /* GameKeeper.swift */,
 				F209797C1FB9D70600CCC6D2 /* Assets.xcassets */,
-				F209797E1FB9D70600CCC6D2 /* LaunchScreen.storyboard */,
-				F20979811FB9D70600CCC6D2 /* Info.plist */,
 				F2CB2FCD1FBB327800573886 /* BoardViewController.swift */,
+				F2803DC11FBB393C00A09182 /* GameKeeper.swift */,
+				F20979811FB9D70600CCC6D2 /* Info.plist */,
+				F209797E1FB9D70600CCC6D2 /* LaunchScreen.storyboard */,
+				F20979791FB9D70600CCC6D2 /* Main.storyboard */,
 				F2803DBF1FBB369800A09182 /* Square.swift */,
 			);
 			path = Reversi;
@@ -113,8 +113,8 @@
 		F20979891FB9D70700CCC6D2 /* ReversiTests */ = {
 			isa = PBXGroup;
 			children = (
-				F209798A1FB9D70700CCC6D2 /* ReversiTests.swift */,
 				F209798C1FB9D70700CCC6D2 /* Info.plist */,
+				F209798A1FB9D70700CCC6D2 /* ReversiTests.swift */,
 			);
 			path = ReversiTests;
 			sourceTree = "<group>";
@@ -122,8 +122,8 @@
 		F20979941FB9D70700CCC6D2 /* ReversiUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F20979951FB9D70700CCC6D2 /* ReversiUITests.swift */,
 				F20979971FB9D70700CCC6D2 /* Info.plist */,
+				F20979951FB9D70700CCC6D2 /* ReversiUITests.swift */,
 			);
 			path = ReversiUITests;
 			sourceTree = "<group>";
@@ -236,8 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20979801FB9D70600CCC6D2 /* LaunchScreen.storyboard in Resources */,
 				F209797D1FB9D70600CCC6D2 /* Assets.xcassets in Resources */,
+				F20979801FB9D70600CCC6D2 /* LaunchScreen.storyboard in Resources */,
 				F209797B1FB9D70600CCC6D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,9 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2803DC01FBB369800A09182 /* Square.swift in Sources */,
 				F2CB2FCE1FBB327800573886 /* BoardViewController.swift in Sources */,
 				F2803DC21FBB393C00A09182 /* GameKeeper.swift in Sources */,
+				F2803DC01FBB369800A09182 /* Square.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +307,7 @@
 				F209797A1FB9D70600CCC6D2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		F209797E1FB9D70600CCC6D2 /* LaunchScreen.storyboard */ = {
@@ -315,6 +316,7 @@
 				F209797F1FB9D70600CCC6D2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
